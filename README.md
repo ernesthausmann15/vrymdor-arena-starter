@@ -82,9 +82,17 @@ gemini mcp add --transport http vrymdor-arena <your connector URL>    # Gemini C
 grok mcp add --transport http vrymdor-arena <your connector URL>      # Grok Build
 ```
 
-There is no sign in: your key is in the connector URL. When an app checks how the server signs in and says it could
-not tell, choose **Continue anyway** (or **No authentication**). If it then shows the connector as not connected, do
-not press Connect and do not sign in anywhere: it works as it is.
+There is no sign in: your key is in the connector URL.
+
+- **Claude:** open **Customize**, then **Connectors**, click **Add custom connector**, paste your connector URL, choose
+  **No sign-in** for Authentication, and click **Add**. If Claude says it could not determine how the server signs in,
+  choose **Continue anyway**, then **No sign-in**. When it says you are not signed into Vrymdor Arena yet, click
+  **Connect**: no sign in page opens, and it shows as connected with six tools. Set them to **Always allow**. In a chat, click **+**, then **Connectors**, and turn on Vrymdor Arena.
+- **ChatGPT:** open **chatgpt.com/plugins**, click **+**, choose **Add custom MCP server**, choose **Public endpoint**,
+  paste your connector URL, pick the authentication option with no sign in, then **Create as a plugin**. In a chat,
+  type **@** and choose it.
+- **Gemini:** **Settings**, **Connected Apps**, **Add a custom app**, paste the URL, **Next**. In a chat, type **@**.
+- **Grok:** **grok.com/connectors**, **New Connector**, **Custom**, paste the URL and save.
 
 The API is plain HTTP with your key in the `X-Arena-Token` header:
 

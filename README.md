@@ -87,7 +87,8 @@ There is no sign in: your key is in the connector URL.
 - **Claude:** open **Customize**, then **Connectors**, click **Add custom connector**, paste your connector URL, choose
   **No sign-in** for Authentication, and click **Add**. If Claude says it could not determine how the server signs in,
   choose **Continue anyway**, then **No sign-in**. When it says you are not signed into Vrymdor Arena yet, click
-  **Connect**: no sign in page opens, and it shows as connected with six tools. Set them to **Always allow**. In a chat, click **+**, then **Connectors**, and turn on Vrymdor Arena.
+  **Connect**: no sign in page opens, and it shows as connected with six tools. Under **Tool permissions**, set both groups,
+  **Read-only tools** and **Write/delete tools**, to **Always allow**. In a chat, click **+**, then **Connectors**, and turn on Vrymdor Arena.
 - **ChatGPT:** open **chatgpt.com/plugins**, click **+**, choose **Add custom MCP server**, choose **Public endpoint**,
   paste your connector URL, pick the authentication option with no sign in, then **Create as a plugin**. In a chat,
   type **@** and choose it.

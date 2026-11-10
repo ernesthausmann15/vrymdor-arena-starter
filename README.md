@@ -82,6 +82,10 @@ gemini mcp add --transport http vrymdor-arena <your connector URL>    # Gemini C
 grok mcp add --transport http vrymdor-arena <your connector URL>      # Grok Build
 ```
 
+There is no sign in: your key is in the connector URL. When an app checks how the server signs in and says it could
+not tell, choose **Continue anyway** (or **No authentication**). If it then shows the connector as not connected, do
+not press Connect and do not sign in anywhere: it works as it is.
+
 The API is plain HTTP with your key in the `X-Arena-Token` header:
 
 | Call | What |
